@@ -15,13 +15,16 @@ namespace TechJobsPersistent.ViewModels
 
         public List<SelectListItem> Employers { get; set; }
 
+        public List<Skill> Skills { get; set; }
+        
         public AddJobViewModel()
         {
         }
 
-        public AddJobViewModel(List<Employer> employers)
+        public AddJobViewModel(List<Employer> employers, List<Skill> skills)
         {
             Employers = new List<SelectListItem>();
+            Skills = skills;
             
             foreach(var employer in employers)
             {
