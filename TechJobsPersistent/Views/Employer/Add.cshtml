@@ -1,7 +1,9 @@
 ﻿@using TechJobsPersistent.ViewModels
+@*The @model recieves the ViewModel*@
 @model AddEmployerViewModel
 <h1>Add New Employer</h1>
 
+@*The form controller action method directs it back*@
 <form asp-controller="Employer" asp-action="ProcessAddEmployerForm" method="post">
     <div class="form-group">
         <label>Employer Name</label>
